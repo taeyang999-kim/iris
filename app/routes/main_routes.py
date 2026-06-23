@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request
-from ml.predictor import predict_iris
-from db.database import Database
+from app.ml.predictor import predict_iris
+from app.db.database import Database
 from flask import redirect, url_for
 
 bp = Blueprint("main", __name__)
